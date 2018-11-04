@@ -1,0 +1,23 @@
+.header {
+  background-color: #65B175;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+}
+
+.logo {
+  display: contents;
+  font-size: 100%;
+}
+
+.nav-bar {
+  display: flex;
+  a {
+    margin: 0 1em;
+    color: white;
+    align-self: flex-end;
+  }
+}
