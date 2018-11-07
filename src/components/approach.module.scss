@@ -1,0 +1,15 @@
+
+.approach {
+  background-color: #c5dbc5;
+  text-align: center;
+  padding: 1em 2em;
+  min-height: 100vh;
+}
+
+.sections {
+  display: flex;
+  justify-content: space-between;
+  div {
+    flex-basis: 15em;
+  }
+}
