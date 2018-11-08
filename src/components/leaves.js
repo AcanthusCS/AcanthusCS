@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-
 class Leaves extends React.Component {
   render() {
     return (
@@ -21,8 +20,10 @@ class Leaves extends React.Component {
         render={data => (
           <Img
             style={{
-              postion: "relative",
+              position: "sticky",
+              top: 0,
               zIndex: -1,
+              height: "100vh",
             }}
             imgStyle={{
               zIndex: -1,

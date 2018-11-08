@@ -7,7 +7,6 @@ class Landing extends React.Component {
   render () {
     return (
       <div id="landing" className={styles.landing}>
-        <Leaves/>
         <h1 className={styles.landingText}>
           {this.props.data.text}
         </h1>
