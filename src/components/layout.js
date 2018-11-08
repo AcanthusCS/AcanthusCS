@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from "../components/header"
-
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -28,7 +25,6 @@ const Layout = ({ children }) => (
         >
           <html lang="en" style={{"scroll-behavior": "smooth"}}/>
         </Helmet>
-        <Header/>
         <div>
           {children}
         </div>
