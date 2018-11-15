@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Leaves from '../components/leaves';
 import styles from "../components/landing.module.scss";
 
 class Landing extends React.Component {

@@ -19,22 +19,22 @@ class Header extends React.Component {
           <Link
             to="#approach"
           >
-            Approach
+            <h4>Approach</h4>
           </Link>
           <Link
             to="#clients"
           >
-            Clients
+            <h4>Clients</h4>
           </Link>
           <Link
             to="#about"
           >
-            About
+            <h4>About</h4>
           </Link>
           <Link
             to="#contact"
           >
-            Contact
+            <h4>Contact</h4>
           </Link>
         </div>
       </div>
