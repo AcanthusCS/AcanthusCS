@@ -1,11 +1,30 @@
 .about {
   position: relative;
   text-align: center;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+.about-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/ryan_v2.jpg);
+  background-size: cover;
+  background-position: right top;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .about-text {
-  position: absolute;
   top: 0;
   background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  margin-right: 440px;
+  p {
+    text-align: left;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Leaves from '../components/leaves';
+import NavbarGap from "../components/navbargap";
 
 import styles from "../components/approach.module.scss";
 
@@ -8,6 +8,7 @@ class Approach extends React.Component {
   render () {
     return (
       <div id="approach" className={styles.approach}>
+        <NavbarGap/>
         <div id='approach_background' className={styles.approachBackground}> </div>
         <div id="approach_content" className={styles.approachContent}>
           <div className={styles.approachHead}>
