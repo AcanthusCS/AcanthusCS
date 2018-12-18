@@ -3,9 +3,22 @@
   position: relative;
 }
 
+.approach-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/leaves_v2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px) brightness(90%);
+}
+
 .approach-content {
   color: white;
-  text-align: center;
+  background-color: transparent;
   padding: 1em 2em;
   min-height: 100vh;
   top: 0;
@@ -14,9 +27,25 @@
   }
 }
 
+@media (min-width: 43.75em) {
+  .approach-content {
+    padding: 1em 5em;
+  }
+}
+
+@media (min-width: 56.25em) {
+  .approach-content {
+    padding: 1em 7em;
+  }
+}
+
+.approach-head {
+  margin-bottom: 10vh;
+}
+
 .sections {
   div {
-    height: 100vh;
+    margin-bottom: 10vh;
   }
 }
 

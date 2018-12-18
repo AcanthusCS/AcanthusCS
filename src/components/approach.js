@@ -8,12 +8,14 @@ class Approach extends React.Component {
   render () {
     return (
       <div id="approach" className={styles.approach}>
-        <Leaves/>
+        <div id='approach_background' className={styles.approachBackground}> </div>
         <div id="approach_content" className={styles.approachContent}>
-          <h1>Approach</h1>
-          <p>
-            {this.props.data.text}
-          </p>
+          <div className={styles.approachHead}>
+            <h1>Approach</h1>
+            <p>
+              {this.props.data.text}
+            </p>
+          </div>
           <div className={styles.sections}>
             {this.props.data.sections.map( (section, sectionIndex) =>
               <div key={"approach_section_" + String(sectionIndex) }>

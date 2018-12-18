@@ -11,7 +11,6 @@
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sass": "next",
     "gatsby-plugin-sharp": "^2.0.5",
-    "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-sharp": "^2.1.1",
     "gatsby-transformer-yaml": "^1.5.18",
