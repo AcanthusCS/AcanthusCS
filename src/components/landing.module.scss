@@ -1,14 +1,22 @@
 .landing {
   text-align: center;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .landing-text {
-  vertical-align: middle;
-  position: absolute;
-  top: 50%;
-  right:0;
-  left:0;
-  transform: translate(0, -50%);
+  text-align: right;
+  font-style: italic;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.logo {
+  max-width: 800px;
+  object-fit: contain;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }

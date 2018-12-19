@@ -11,20 +11,34 @@
   background-image: url(../images/ryan_v2.jpg);
   background-size: cover;
   background-position: right top;
+  background-color: #97ab6f;
   top: 0;
   right: 0;
   object-fit: cover;
   z-index: -1;
 }
 
+.about-text-container {
+  margin-right: 440px;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .about-text {
   top: 0;
-  background-color: rgba(255, 255, 255, 0.75);
-  height: 100%;
-  margin-right: 440px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 2rem;
+  padding: 2rem;
   p {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: left;
-    padding-right: 1rem;
-    padding-left: 1rem;
+  }
+  h4 {
+    font-style: italic;
+    text-align: left;
   }
 }
