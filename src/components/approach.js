@@ -20,7 +20,7 @@ class Approach extends React.Component {
           <div className={styles.sections}>
             {this.props.data.sections.map( (section, sectionIndex) =>
               <div key={"approach_section_" + String(sectionIndex) }>
-                <h3>{section.name}</h3>
+                <h2>{section.name}</h2>
                 <p>{section.text}</p>
               </div>
             )}

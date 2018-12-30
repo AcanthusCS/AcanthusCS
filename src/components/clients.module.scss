@@ -1,7 +1,95 @@
 .clients {
-  background-color: #b6c991;
   text-align: center;
-  padding: 1em 2em;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+  padding-right: 1em;
+  padding-left: 1em;
   min-height: 100vh;
   position: relative;
+  background-image: url(../images/vector_leaves.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #b6c991;
+}
+
+.clients-content {
+  background-color: rgba(183, 229, 165, 0.70);
+  min-height: 80vh;
+  border-radius: 1em;
+  padding: 1em;
+
+  h1 {
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 1em;
+    padding: 1em;
+  }
+}
+
+.client-endorsement {
+  background-color: rgba(255, 255, 255, 0.60);
+  border-radius: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-logo {
+  object-fit: contain;
+  max-width: 85%;
+  background-color: white;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.client-text {
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+  h4 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: .5em;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .clients {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  .client-text {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  .client-logo {
+    max-width: 250px;
+  }
+
+  .clients-content {
+    border-radius: 2em;
+    padding: 2em;
+  }
+
+  .client-endorsement {
+    border-radius: 2em;
+    padding: 2em;
+  }
+}
+
+@media (min-width: 56.25em) {
+
+  .client-endorsement {
+    flex-direction: row;
+  }
+
+  .clients {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
 }

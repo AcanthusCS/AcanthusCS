@@ -2,6 +2,9 @@ import React from 'react';
 
 import logo from "../images/logo.svg"
 
+
+import { FaAngleDown } from 'react-icons/fa';
+
 import styles from "../components/landing.module.scss";
 
 class Landing extends React.Component {
@@ -12,6 +15,7 @@ class Landing extends React.Component {
         <h2 className={styles.landingText}>
           {this.props.data.text}
         </h2>
+        <FaAngleDown className={styles.bounce}/>
       </div>
     )
   }
