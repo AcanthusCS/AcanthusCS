@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styles from "../components/header.module.scss";
-import logo from "../images/logo.svg"
+import logo from "../images/logo2.png"
 
 import { FaBars, FaClose } from 'react-icons/fa';
 

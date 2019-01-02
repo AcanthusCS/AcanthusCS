@@ -2,52 +2,30 @@
   position: relative;
   text-align: center;
   min-height: 100vh;
+  padding-bottom: 20vh;
 }
 
-.about-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/ryan_v2.jpg);
-  background-size: cover;
-  background-position: left top;
-  background-attachment: fixed;
-  background-color: #97ab6f;
-  top: 0;
-  right: 0;
-  object-fit: cover;
-  z-index: -1;
+.about-container {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.about-text-container {
-  margin-right: 2em;
-  margin-left: 2em;
+.about-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 10%;
+  padding-right: 10%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  min-height: 100vh;
 }
-
-@media (min-width: 43.75em) {
-  .about-text-container {
-    margin-right: 440px;
-  }
-
-  .about-background {
-    background-position: right top;
-  }
-}
-
 
 .about-text {
   top: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 2em;
   padding: 2em;
-  margin-top: 4.5em;
-  margin-bottom: 4.5em;
   p {
-    padding-top: 1.5em;
     padding-bottom: 1.5em;
     text-align: left;
   }
@@ -57,5 +35,26 @@
   }
   h1 {
     margin-bottom: 0;
+  }
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ryan {
+  height: 75vh;
+  object-fit: contain;
+  display: none;
+  border-color: rgb(28,121,179);
+  border-width: 3px;
+  border-style: solid;
+}
+
+@media (min-width: 56.25em) {
+  .ryan {
+    display: block;
   }
 }

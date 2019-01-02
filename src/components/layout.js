@@ -25,7 +25,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
-          <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Raleway:300,300i,400,400i,500,500i" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Oswald:300|Raleway:400" rel="stylesheet"/>
         </Helmet>
         <div id="page">
           {children}

@@ -8,7 +8,6 @@ import Clients  from '../components/clients';
 import About    from '../components/about';
 import Contact  from '../components/contact';
 import Header   from '../components/header';
-import Spacer   from '../components/spacer';
 
 import styles   from '../pages/index.module.scss';
 
@@ -38,7 +37,12 @@ const IndexPage = () => (
                   text
                 }
                 about {
-                  text
+                  name
+                  title
+                  text {
+                    key
+                    sentance
+                  }
                 }
                 contact {
                   phone

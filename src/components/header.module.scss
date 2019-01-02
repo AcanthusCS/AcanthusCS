@@ -1,5 +1,5 @@
 .header {
-  background-color: #EEEEEE;
+  background-color:   white; //#E8E8E8;
   position: sticky;
   top: 0;
   display: flex;
@@ -7,6 +7,9 @@
   z-index: 1;
   width: 100%;
   height: 4rem;
+  border-bottom: 1px;
+  border-color: #A0A0A0; //#E8E8E8;
+  border-style: solid;
 }
 
 .logo {

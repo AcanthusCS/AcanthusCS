@@ -1,32 +1,38 @@
 import React from 'react';
 
-import NavbarGap from "../components/navbargap";
-
 import styles from "../components/approach.module.scss";
 
 class Approach extends React.Component {
   render () {
     return (
-      <div id="approach" className={styles.approach}>
-        <NavbarGap/>
-        <div id='approach_background' className={styles.approachBackground}> </div>
+      <>
+      <div id="approach" className={styles.approach + " light-green"}>
         <div id="approach_content" className={styles.approachContent}>
-          <div className={styles.approachHead}>
-            <h1>Approach</h1>
-            <p>
-              {this.props.data.text}
-            </p>
-          </div>
-          <div className={styles.sections}>
+          <div id='approach_text' className={styles.approachText}>
+            <div>
+              <h1>Approach</h1>
+              <blockquote>
+                {this.props.data.text}
+              </blockquote>
+            </div>
             {this.props.data.sections.map( (section, sectionIndex) =>
-              <div key={"approach_section_" + String(sectionIndex) }>
-                <h2>{section.name}</h2>
-                <p>{section.text}</p>
+              <div key={"approach_" + String(sectionIndex)} className={styles.approachSection}>
+                <label for={"approach_input_" + String(sectionIndex)}> <h3>{section.name}</h3> </label>
+                <input 
+                  type='checkbox' 
+                  id={"approach_input_" + String(sectionIndex)} 
+                  name={"approach_input_" + String(sectionIndex)}
+                />
+                <div className={styles.collapsable}>
+                  <p>{section.text}</p>
+                </div>
               </div>
             )}
           </div>
         </div>
       </div>
+      <div className="green-to-blue page-transition"></div>
+      </>
     )
   }
 }

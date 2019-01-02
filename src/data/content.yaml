@@ -1,0 +1,71 @@
+---
+landing:
+  text: Qualitative research support, from the ground up
+
+approach:
+  text: >
+    We believe that the best solutions come from collaboration between the best people. By 
+    taking a fully integrated approach to project support we support your team and strengthen 
+    your research not as an outside voice, but as a fully fledged team-member
+
+  sections:
+    - name: Design innovative procedures
+      text: >
+        By investigating market landscapes through secondary sources like news articles, 
+        product pipelines, or ethnographic studies, we’ll help your team understand the 
+        broader context in which your clients are situated and leverage this background 
+        to design targeted qualitative research tools, including surveys, messaging materials, 
+        and discussion guides
+    - name: Gather meticulous data
+      text: >
+        No matter what form your research takes, the data-gathering phase is key—and so is our support. 
+        By participating in the interview process, running surveys, or providing detailed transcripts 
+        and notes, we’ll keep your data organized, streamlined, and ready to analyze
+    - name: Develop meaningful insights
+      text: >
+        Your clients count on you for insightful analysis, and we stand prepared to help you deliver. 
+        Using qualitative methodologies, we’ll code and analyze project data in collaboration with 
+        your research team. By discovering patterns in open ended conversations and turning close coded 
+        questions into quantified trends we can help uncover the key insights your clients anticipate
+    - name: Deliver compelling presentations
+      text: >
+        The end of every research project needs an expertly crafted, deliverable report, and no matter 
+        the format —from a written document to a streamlined powerpoint—we are prepared to help bring 
+        it together. By taking the team’s insights and discussing them in your client’s own language 
+        we can assist in building the perfect final presentation
+
+clients:
+  - company: Riedel Strategy
+    logo: rs_logo.png
+    name: Barnaby B. Riedel, Ph.D.
+    title: Co-Founder and Chief Research Strategist
+    text: >
+      Our experience working with Acanthus Consulting has been excellent. Ryan joined our team with a quick, 
+      proactive attitude, an eagerness to learn, and substantial experience supporting qualitative and quantitative 
+      research. The flexibility and meticulous work that he brought to the table proved indispensable to our latest 
+      research projects, and we hope to partner with him again as soon as the opportunity arises.
+
+about:
+  text:
+    - key: a
+      sentance: >
+        Every market research project entails is unique but investigates the same universal questions. What motivates us? 
+        What holds us back? How do we connect to the people around us?
+    - key: b
+      sentance: >
+        Since graduating from the University of Chicago with an MA in the Social Sciences, I’ve been able to explore the 
+        lives of consumers across some of the world’s most innovative markets and to gain insight into the ways they relate 
+        to the world around them.
+    - key: c
+      sentance: >
+        Acanthus was founded with the goal of leveraging trusted methodologies to bring adept support to market research 
+        firms, and to explore dichotomies that define us. The researcher and the consumer. The lure of future and weight 
+        of history. The legacy and innovation of research. All coming together and growing into the human experience.
+  name: Ryan H. Kacani, MA
+  title: Founder
+
+contact:
+  phone: 909.566.0615
+  email: AcanthusCS@gmail.com
+  linkedin: https://www.linkedin.com/company/acanthuscs/
+...

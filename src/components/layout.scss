@@ -15,8 +15,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Oswald', sans-serif;
-  color: #4a779e;
-  margin-bottom: .5rem;
+  color: #1c79b3;
+  padding-bottom: .5rem;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 a {
@@ -123,17 +127,53 @@ h4 {
 }
 
 blockquote {
-  font-size: 1.25em;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
 }
 
 @media (min-width: 43.75em) {
   blockquote {
-    font-size: 1.5em;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */
+    font-size: 1.25em;
+    /* 20px / 16px */
+    line-height: 1.25;
+    /* 25px / 20px */
   }
+}
+
+// light green #afcc7a
+// rgba(175,204,122, 0.95);
+// dark green  #90ae58
+// rgba(144,174,88, 0.95);
+// light blue  #5ea9c6
+// rgba(94,169,198, 0.95);
+// dark blue   #1c79b3
+// rgba(28,121,179, 0.95);
+
+.page-transition {
+  height: 20vh;
+}
+
+.green-to-blue {
+  background-image: linear-gradient(rgba(175,204,122, 0.95), rgba(94,169,198, 0.95));
+}
+
+.blue-to-green {
+  background-image: linear-gradient(rgba(94,169,198, 0.95), rgba(175,204,122, 0.95));
+}
+
+.light-green {
+  background-color: rgba(175,204,122, 0.95);
+}
+
+.dark-green {
+  background-color: rgba(144,174,88, 0.95);
+}
+
+.light-blue {
+  background-color: rgba(94,169,198, 0.95);
+}
+
+.dark-blue {
+  background-color: rgba(28,121,179, 0.95);
 }
