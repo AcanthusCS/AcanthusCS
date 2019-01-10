@@ -22,7 +22,7 @@ class NavBar extends React.Component {
           <Link
             to="#"
           >
-            <h4>Landing</h4>
+            <h4>Home</h4>
           </Link>
           <Link
             to="#approach"
