@@ -17,7 +17,7 @@ class Approach extends React.Component {
             </div>
             {this.props.data.sections.map( (section, sectionIndex) =>
               <div key={"approach_" + String(sectionIndex)} className={styles.approachSection}>
-                <label for={"approach_input_" + String(sectionIndex)}> <h3>{section.name}</h3> </label>
+                <label htmlFor={"approach_input_" + String(sectionIndex)}> <h3>{section.name}</h3> </label>
                 <input 
                   type='checkbox' 
                   id={"approach_input_" + String(sectionIndex)} 

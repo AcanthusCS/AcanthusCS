@@ -12,7 +12,7 @@ class About extends React.Component {
           <div className={styles.aboutContent}>
             <div className={styles.aboutText}>
               {this.props.data.text.map( (text, sectionIndex) =>
-                <p id={"about_sentance_" + String(sectionIndex)}>
+                <p key={"about_sentance_" + String(sectionIndex)}>
                   {text.sentance}
                 </p>
               )}
