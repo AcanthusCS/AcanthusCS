@@ -24,13 +24,18 @@
 }
 
 .landing-content {
+  padding-bottom: 10vh;
   text-align: center;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media (min-width: 43.75em) {
+    padding-bottom: 0;
+    min-height: 100vh;
+  }
 }
 
 .line {
