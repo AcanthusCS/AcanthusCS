@@ -4,25 +4,21 @@
   padding-top: 4.5em;
 }
 
-@media (min-width: 43.75em) {
-  .approach-text {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-
-@media (min-width: 56.25em) {
-  .approach-text {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
-
 .approach-text {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 1em;
   padding-bottom: 1em;
+
+  @media (min-width: 43.75em) {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  @media (min-width: 56.25em) {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 
   h3,h2,h1 {
     text-align: center;
@@ -56,19 +52,24 @@
 
   label{
     position: relative;
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
     cursor:pointer;
     background-color: rgb(28,121,179);
     transition: background-color .2s;
 
+    @media (min-width: 43.75em) {
+      justify-content: center;
+    }
+
     h3 {
       display: inline-block;
       color: white;
+      padding-left: 1em;
+      padding-right: 1em;
     }
 
     .section-arrow {
-      display: none;
       position: absolute;
       right: 5px;
       height: 100%;
@@ -78,7 +79,6 @@
     }
   }
 
-  label:hover,
   input:checked ~ label{
     background-color: rgb(144,174,88);
   }
@@ -88,28 +88,23 @@
       transform: rotate(0);
     }
   }
+
+  @media (pointer: fine) {
+    label:hover {
+      background-color: rgb(144,174,88);
+    }
+  }
 }
 
 .approach-section {
   padding: 0 1em 1em 1em;
-}
 
-@media (min-width: 43.75em) {
-  .approach-text {
-    label {
-      .section-arrow {
-        display: inline;
-      }
-    }
-  }
-  .approach-section {
+  @media (min-width: 43.75em) {
     padding-left: 5%;
     padding-right: 5%;
   }
-}
 
-@media (min-width: 56.25em) {
-  .approach-section {
+  @media (min-width: 56.25em) {
     padding-left: 10%;
     padding-right: 10%;
   }

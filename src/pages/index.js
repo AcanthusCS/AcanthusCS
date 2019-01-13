@@ -48,6 +48,8 @@ const IndexPage = () => (
                   phone
                   email
                   linkedin
+                  credits
+                  copyright
                 }
               }
             }
