@@ -4,7 +4,6 @@
   padding-top: 4.5em;
 }
 
-
 @media (min-width: 43.75em) {
   .approach-text {
     padding-left: 20%;
@@ -22,7 +21,6 @@
 .approach-text {
   padding-left: 10%;
   padding-right: 10%;
-
   padding-top: 1em;
   padding-bottom: 1em;
 
@@ -57,38 +55,39 @@
   }
 
   label{
-    position:relative;
-    display:block;
-    padding:0 18px 0 12px;
-    line-height:3em;
-    transition:background 0.3s;
+    position: relative;
+    justify-content: center;
+    display: flex;
     cursor:pointer;
-  }
+    background-color: rgb(28,121,179);
+    transition: background-color .2s;
 
-  label:after{
-    content:"";
-    position:absolute;
-    display:block;
-    top:50%;
-    right:5px;
-    width:0;
-    height:0;
-    border-top:4px solid rgba(255,255,255,.5);
-    border-bottom:0 solid rgba(255,255,255,.5);
-    border-left:4px solid transparent;
-    border-right:4px solid transparent;
-    transition:border-bottom .1s, border-top .1s .1s;
+    h3 {
+      display: inline-block;
+      color: white;
+    }
+
+    .section-arrow {
+      display: none;
+      position: absolute;
+      right: 5px;
+      height: 100%;
+      color: white;
+      transform: rotate(90deg);
+      transition: transform .2s ease-in-out;
+    }
   }
 
   label:hover,
-  input:checked ~ label{background:rgba(0,0,0,.3);}
-
-  input:checked ~ label:after{
-    border-top:0 solid rgba(255,255,255,.5);
-    border-bottom:4px solid rgba(255,255,255,.5);
-    transition:border-top .1s, border-bottom .1s .1s;
+  input:checked ~ label{
+    background-color: rgb(144,174,88);
   }
 
+  input:checked ~ label{
+    .section-arrow {
+      transform: rotate(0);
+    }
+  }
 }
 
 .approach-section {
@@ -96,6 +95,13 @@
 }
 
 @media (min-width: 43.75em) {
+  .approach-text {
+    label {
+      .section-arrow {
+        display: inline;
+      }
+    }
+  }
   .approach-section {
     padding-left: 5%;
     padding-right: 5%;
@@ -114,36 +120,4 @@
   margin-left: 10%;
   margin-right: 10%;
   background-color: white;
-
-
-
-  // /*style for the second level menu*/
-  // ul.submenu{
-  //   max-height:0;
-  //   padding:0;
-  //   overflow:hidden;
-  //   list-style-type:none;
-  //   background:#444;
-  //   box-shadow:0 0 1px rgba(0,0,0,.3);
-  //   transition:max-height 0.5s ease-out;
-  //   position:absolute;
-  //   min-width:100%;
-  // }
-
-  // ul.submenu li a{
-  //   display:block;
-  //   padding:12px;
-  //   color:#ddd;
-  //   text-decoration:none;
-  //   box-shadow:0 -1px rgba(0,0,0,.5) inset;
-  //   transition:background .3s;
-  //   white-space:nowrap;
-  // }
-
-  // ul.submenu li a:hover{
-  //   background:rgba(0,0,0,.3);
-  // }
 }
-
-
-

@@ -30,4 +30,9 @@
   color: white;
   width: 2.5em;
   height: 2.5em;
+  transition: color .2s;
+}
+
+.icon:hover {
+  color: rgb(175,204,122);
 }

@@ -45,7 +45,7 @@
 }
 
 .ryan {
-  height: 75vh;
+  height: 50vh;
   object-fit: contain;
   display: none;
   border-color: rgb(28,121,179);
@@ -53,8 +53,35 @@
   border-style: solid;
 }
 
+.about-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ryan-small {
+  height: 100px;
+  width: 100px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  display: inline-block;
+  border-color: rgb(28,121,179);
+  border-width: 2px;
+  border-style: solid;
+}
+
 @media (min-width: 56.25em) {
   .ryan {
     display: block;
+  }
+  .ryan-small {
+    display: none;
+  }
+}
+
+@media (min-width: 43.75em) {
+  .about-end {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }

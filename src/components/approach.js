@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FaAngleDown } from 'react-icons/fa';
+
 import styles from "../components/approach.module.scss";
 
 class Approach extends React.Component {
@@ -17,12 +19,15 @@ class Approach extends React.Component {
             </div>
             {this.props.data.sections.map( (section, sectionIndex) =>
               <div key={"approach_" + String(sectionIndex)} className={styles.approachSection}>
-                <label htmlFor={"approach_input_" + String(sectionIndex)}> <h3>{section.name}</h3> </label>
                 <input 
                   type='checkbox' 
                   id={"approach_input_" + String(sectionIndex)} 
                   name={"approach_input_" + String(sectionIndex)}
                 />
+                <label htmlFor={"approach_input_" + String(sectionIndex)}> 
+                  <h3>{section.name}</h3>
+                  <FaAngleDown className={styles.sectionArrow}/>
+                </label>
                 <div className={styles.collapsable}>
                   <p>{section.text}</p>
                 </div>

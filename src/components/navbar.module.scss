@@ -28,6 +28,7 @@
     h4 {
       padding: 1em;
       text-align: center;
+      transition: color .2s;
       background-color: rgb(28,121,179);
       color: white;
       border-color: rgb(144,174,88);
@@ -94,7 +95,7 @@
 
       h4:hover {
         background-color: white;
-        color: rgb(94,169,198);
+        color: rgb(175,204,122);
       }
     }
 
