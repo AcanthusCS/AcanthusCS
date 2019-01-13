@@ -48,9 +48,12 @@
 }
 
 .logo {
-  height: auto;
+  height: 25vh;
   max-width: 800px;
   object-fit: scale-down;
   padding-right: 2em;
   padding-left: 2em;
+  @media (min-width: 43.75em) {
+    height: auto;
+  }
 }
