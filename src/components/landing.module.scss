@@ -16,7 +16,7 @@
   animation-iteration-count: infinite;
   text-align: center;
   fill: currentColor;
-  color: #1c79b3;
+  color: black;
 }
 
 .landing {
@@ -33,6 +33,13 @@
   justify-content: space-around;
 }
 
+.line {
+  height: 5px;
+  margin-right: 3em;
+  margin-left: 3em;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3); 
+}
+
 .landing-text {
   text-align: right;
   font-style: italic;
@@ -41,8 +48,9 @@
 }
 
 .logo {
+  height: auto;
   max-width: 800px;
-  object-fit: contain;
+  object-fit: scale-down;
   padding-right: 2em;
   padding-left: 2em;
 }
