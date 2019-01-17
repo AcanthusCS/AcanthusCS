@@ -50,6 +50,7 @@
   }
   background-color: #F0F0F0;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .client-endorsement-after {
@@ -62,6 +63,7 @@
 .client-logo {
   object-fit: contain;
   max-width: 85%;
+  flex-grow: 1;
 }
 
 .client-text {
@@ -73,6 +75,21 @@
   h4 {
     margin-bottom: 0;
   }
+}
+
+.line {
+  height: 5px;
+  display: block;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 @media (min-width: 43.75em) {
