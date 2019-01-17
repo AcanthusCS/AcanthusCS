@@ -41,7 +41,6 @@ class Clients extends React.Component {
               </div>
               {this.props.data.map( (client, clientIndex) =>
                 <div key={String(clientIndex) + "client"} className={styles.clientEndorsement}>
-                  {console.log(client)}
                   <p> {client.text} </p>
                   <div className={styles.clientEndorsementAfter}>
                     {this.getLogo(client.logo || null)}
