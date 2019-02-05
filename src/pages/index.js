@@ -19,8 +19,8 @@ const IndexPage = () => (
           allDataYaml {
             edges{
               node {
-                landing {
-                  text
+                meta {
+                  description
                 }
                 approach {
                   text
@@ -60,7 +60,7 @@ const IndexPage = () => (
         data.allDataYaml.edges.map( edge =>
           <div key="main" className={styles.layout}>
             <Landing
-              data={edge.node.landing}
+              data={edge.node.meta}
             />
             <NavBar/>
             <Approach
