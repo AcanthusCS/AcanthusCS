@@ -40,7 +40,7 @@
 
   /*show the second levele menu of the selected voice*/
   input:checked ~ div.collapsable {
-    max-height: 300px;
+    max-height: 500px;
     transition: max-height 1s ease-in;
   }
 
